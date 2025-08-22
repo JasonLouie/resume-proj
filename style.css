@@ -1,22 +1,30 @@
+body {
+    background-color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #2b2b2b;
+}
 
 section {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid black;
     justify-content: center;
+}
 
+#section1 {
+    border-bottom: 1px solid gray;
 }
 
 
-#container {
-    display: flex;
-    flex-wrap: wrap;
-}
 /* Photo + name & position */
 #box1 {
-    width: 59%;
-    border: 1px solid red;
+    width: 60%;
+    outline: 1px dashed red;
     display: flex;
 }
 
@@ -27,64 +35,137 @@ section {
 /* General info */
 #box2 {
     width: 40%;
-    border: 1px solid blue;
+    outline: 1px dashed blue;
     display: flex;
 }
 
-li {
-    list-style: none;
-    
+#box2 > ul {
+    font-size: 12px;
 }
+
 #general-info {
+    color: white;
+    font-weight: bold;
     padding-left: 10px;
     text-align: right;
-    
 }
 
 #answers {
+    color: gray;
     padding-left: 20px;
 }
 
 #box3 {
-    border: 1px solid green;
-}
-
-#employment {
-
-    width: 90%;
-    border: 1px solid orange;
-    
+    border: 1px dashed green;
+    width: 100%;
 }
 
 #section2 {
     width: 75%;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 #employment-heading {
     display: flex;
-    background-color: darkgray;
+    background-color: #353535;
+    align-items: center;
     height: 40px;
     width: 80%;
 }
 
 #pic-container {
-    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(23, 161, 207);
 }
 
 #pic-container > img {
-    width: 40px;
-    height: auto;
+    width: 15px;
+    height: 15px;
+    filter: invert(1);
 }
 
+#employment {
+    border: 1px dashed orange;
+    width: 80%;
+}
+
+.job {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.job-location {
+    width: 50%;
+    color: white;
+    font-size: 20px;
+}
+
+.job-duration {
+    width: 50%;
+    text-align: right;
+    font-size: 20px;
+}
+
+.job-title {
+    font-size: 18px;
+    width: 100%;
+}
+
+.job-desc {
+    font-size: 12px;
+    width: 100%;
+}
+
+
+
+
 #section3 {
-    width: 24%;
+    width: 25%;
+    outline: 1px dashed purple;
 }
 
 .bar {
     width: 200px;
     background-color: black;
     height: 20px;
+    display: flex;
+}
+
+#python-progress {
+    width: 70%;
+    height: auto;
+    background-color: #b4b4b4;
+}
+
+#php-progress {
+    width: 40%;
+    height: auto;
+    background-color: #b4b4b4;
+}
+
+#html-progress {
+    width: 60%;
+    height: auto;
+    background-color: #cc4444;
+}
+
+#css-progress {
+    width: 50%;
+    height: auto;
+    background-color: #b2c3e5;
+}
+
+#mysql-progress {
+    width: 65%;
+    height: auto;
+    background-color: #14e356;
 }
 
 p#biography {
@@ -92,8 +173,25 @@ p#biography {
     padding: 7px;
 }
 
+
+/* General selector styles */
 p {
-    margin: 6px 0;
+    margin: 0;
+    color: gray;
+}
+
+
+li {
+    list-style: none;
+    
+}
+
+h1, h2 {
+    color: white;
+}
+
+#position {
+    color: aqua;
 }
 
 h2 {
@@ -101,6 +199,7 @@ h2 {
 }
 
 h3 {
+    color: white;
     margin: 8px 0;
 }
 
@@ -110,7 +209,6 @@ img {
 }
 
 a{
-    color: black;
+    color: inherit;
     text-decoration: none;
-    font-style: italic;
 }
